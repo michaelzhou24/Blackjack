@@ -18,6 +18,7 @@ public class Deck {
     public Card dealCard() {
         Card dealtCard = cards.get(randomCard());
         cards.remove(dealtCard);
+        System.out.println("Dealt a "+dealtCard.getName()+" of "+dealtCard.getSuit()+"!");
         return dealtCard;
     }
 
